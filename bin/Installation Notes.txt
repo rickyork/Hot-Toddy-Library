@@ -1,0 +1,34 @@
+catdoc
+http://wagner.pp.ru/~vitus/software/catdoc
+
+Installs the following commands to /usr/local/bin
+
+  catdoc  :   Reads Word .doc files and writes the contents as plain text to stdout.
+  catppt  :   Reads PowerPoint .ppt files and writes the contents as plain text to stdout.
+  xls2csv :   Reads Excel .xls files and writes the contents as plain text (CSV) to stdout.
+
+To install, compile from source.
+
+  # sudo ./configure
+  # sudo make
+  # sudo make install
+
+xpdf
+http://www.foolabs.com/xpdf
+
+Installs the xpdf package, including the following commands:
+
+  pdftops, pdftotext, pdfinfo, pdffonts, pdfimages
+
+  xpdf itself requires X, Motif, and FreeType
+
+
+ffmpeg
+
+To install:
+./configure --enable-libmp3lame --enable-shared --disable-mmx --arch=x86_64
+
+Potential Alternative:
+./configure --disable-vhook --disable-mmx --enable-pthreads --enable-gpl --enable-libx264 --extra-ldflags="-l m"
+
+Requires lame library for MP3.

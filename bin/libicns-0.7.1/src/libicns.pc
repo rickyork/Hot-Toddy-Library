@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libicns
+Description: Loads and saves Macintosh icns files
+Version: 0.5.9
+Libs: -L${libdir} -licns
+Cflags: -I${includedir}
